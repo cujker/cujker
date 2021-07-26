@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf=8" />
+
+        <title>Jakub Prużanin - Portfolio</title>
+
+        <meta name="description" content="Stworzę dla ciebie niepowtarzalną stronę www! Zatrudnij początkującego programistę webowego: HTML, CSS, PHP, JavaScript, MySQL" />
+        <meta name="keywords" content="zamów, stronę, tworzenie, www, programista, portfolio, php, javascript, html, css, student" />
+
+        <link rel="stylesheet" type="text/css" href="styl.css" />
+        <link rel="stylesheet" type="text/css" href="css/fontello.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="file:///D:/Syf/Portfolio/ikona.png" type="image/png">
+
+        <script language="JavaScript">
+            function odliczanie()
+            {
+                var dzisiaj = new Date();
+                
+                var godzina = dzisiaj.getHours();
+                    if (godzina<10) godzina = "0"+godzina;
+            
+                var minuta = dzisiaj.getMinutes();
+                    if (minuta<10) minuta = "0"+minuta;
+            
+                var sekunda = dzisiaj.getSeconds();
+                    if (sekunda<10) sekunda = "0"+sekunda;
+            
+                document.getElementById("zegar").innerHTML = +godzina+":"+minuta+":"+sekunda;
+            
+                setTimeout("odliczanie()",1000);
+            }
+        </script>
+
+    </head>
+    <body onload="odliczanie();">
+        <div id="container">
+            <div class="rectangle">
+                <div id="zegar">
+                    
+                </div>
+                <div id="logo">
+                    <a href="index.html">Jakub Prużanin - Portfolio</a>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+            <div class="square">
+                <div class="tile1">
+                    <a href="omnie.html"><i class="icon-user"></i><br /><br />
+                    O mnie
+                    </a>
+                </div>
+                <div class="tile2">
+                    <a href="kontakt.html"><i class="icon-mail"></i><br /><br />
+                    Kontakt
+                    </a>
+                </div>
+                <div style="clear:both;"></div>
+                <div class="tile1">
+                    <a href="coumiem.html"><i class="icon-laptop"></i><br /><br />
+                    Co potrafię?
+                    </a>
+                </div>
+                <div class="tile3">
+                    <a href="CV Jakub Prużanin.docx"><i class="icon-graduation-cap"></i><br /><br />
+                    Curriculum vitae
+                    </a>
+                </div>
+            </div>
+
+            <div class="square">
+                <div class="tile4" style="font-size: 25px;">
+                    Potrafię programować w: 
+                    <hr />
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <hr />
+                    <a style="font-size: 21px;">Poza ww, chciałbym się nauczyć jeszcze wielu języków programowania</a>
+                </div>
+                <div class="tile5">
+                    <i style="font-size: 20px;">Głupcy posługują się mądrymi cytatami.</i>
+                    <div id="motto">
+                        <i id="motto">MOJE MOTTO</i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rectangle2">
+                <div class="fb">
+                    <a href="https://www.facebook.com/jakub.cubus" class="tilelink" target="_blank"><i class="icon-facebook"></i></a>
+                </div>
+                <div class="yt">
+                    <a href="https://www.youtube.com/channel/UCbY1MdvaqExUSgZ-4ynGrqQ" class="tilelink" target="_blank"><i class="icon-youtube"></i></a>
+                </div>
+                <div class="tw">
+                    <a href="https://twitter.com/cujker" class="tilelink" target="_blank"><i class="icon-twitter"></i></a>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="rectangle">
+                2021 &copy; Jakub Prużanin - Portfolio. Student programista zaprasza do współpracy! <i class="icon-mail-alt"></i>jakub.cubus@gmail.com
+            </div>
+        </div>
+    </body>
+</html>
